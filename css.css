@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Sidebar Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -57,7 +56,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Main Content */
 main {
   margin-left: 240px;
   padding: 40px 20px;
@@ -74,7 +72,6 @@ main {
   margin: 0 auto;
 }
 
-/* Cards */
 .card {
   background-color: #1f1f35;
   border: none;
@@ -92,7 +89,6 @@ main {
   color: #00bcd4;
 }
 
-/* Menu Button */
 .menu-button {
   position: fixed;
   top: 18px;
@@ -100,7 +96,7 @@ main {
   background: none;
   border: none;
   color: #00bcd4;
-  font-size: 26px; /* smaller now */
+  font-size: 26px; 
   cursor: pointer;
   z-index: 1100;
   transition: transform 0.3s ease;
@@ -111,12 +107,10 @@ main {
   transform: scale(1.1);
 }
 
-/* Active (menu open) animation */
 .menu-button.open {
   transform: rotate(90deg);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   nav {
     width: 220px;
@@ -146,5 +140,122 @@ main {
     font-size: 22px;
     top: 14px;
     left: 14px;
+  }
+}
+
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+.info-card {
+  background-color: #1f1f35;
+  border-radius: 12px;
+}
+
+.skill-item {
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+.skill-item p {
+  color: #e0e0e0;
+  font-weight: 500;
+  margin: 0;
+}
+
+.edu-card {
+  background-color: #1f1f35;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-button {
+    font-size: 22px;
+  }
+}
+
+.contact-card,
+.info-card {
+  background-color: #1f1f35;
+  border-radius: 12px;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.form-dark {
+  background-color: #2a2a45;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-dark:focus {
+  background-color: #2f2f52;
+  border-color: #00bcd4;
+  box-shadow: none;
+  color: #fff;
+}
+
+.btn-accent {
+  background-color: #00bcd4;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #009cb3;
+}
+
+.accent-link {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.accent-link:hover {
+  color: #33d4e8;
+}
+
+@media (max-width: 768px) {
+  .contact-section .card {
+    margin-bottom: 20px;
+  }
+
+  .menu-button {
+    font-size: 22px;
   }
 }
