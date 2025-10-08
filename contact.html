@@ -12,7 +12,7 @@
     <h2 class="logo text-center py-3">Sebastian Broberg</h2>
     <ul id="navList">
       <li class="navItem"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="navItem"><a class="nav-link" href="about.html">About</a></li>
+      <li class="navItem"><a class="nav-link" href="about.html">About Me</a></li>
       <li class="navItem"><a class="nav-link" href="projects.html">Projects</a></li>
       <li class="navItem"><a class="nav-link active" href="contact.html">Contact</a></li>
     </ul>
@@ -23,7 +23,7 @@
   <main>
     <section class="intro text-center mb-5">
       <h1 class="display-6 fw-bold text-light">Get in Touch</h1>
-      <p class="lead text-light">Have a project in mind or just want to say hello? Let’s connect.</p>
+      <p class="lead text-light">Contact me through the contact info or through end a message to me through the form.</p>
     </section>
 
     <section class="contact-section container mb-5">
@@ -33,7 +33,7 @@
           <div class="card shadow-sm contact-card">
             <div class="card-body">
               <h4 class="accent mb-4">Send Me a Message</h4>
-              <form id="contactForm" action="#" method="POST">
+              <form id="contactForm" action="https://formspree.io/f/xyzndnbg" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label text-light">Your Email</label>
                   <input type="email" id="email" name="email" class="form-control form-dark" placeholder="you@example.com" required>
@@ -67,6 +67,16 @@
     </section>
   </main>
 
+  <footer class="text-center py-4 mt-5" style="background-color: #0b0b17; color: #ccc;">
+    <div class="container">
+      <p class="mb-2">© 2025 Sebastian Broberg. All Rights Reserved.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://github.com/SebbeBengtson" class="accent-link">GitHub</a>
+        <a href="contact.html" class="accent-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const menuButton = document.querySelector('.menu-button');
@@ -85,11 +95,7 @@
       });
 
       // (Optional) Handle form submission
-      document.querySelector('#contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you! Your message has been sent.');
-        this.reset();
-      });
+      
     });
   </script>
 </body>

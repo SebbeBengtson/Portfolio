@@ -259,3 +259,15 @@ main {
     font-size: 22px;
   }
 }
+
+
+
+/* --- Footer Styles --- */
+
+footer {
+  background-color: #0b0b17;
+  color: #ccc;
+  z-index: 999;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
