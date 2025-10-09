@@ -272,4 +272,12 @@ footer {
 }
 
 
+#indexText{
+  margin: 5.5rem;
+}
 
+@media (max-width: 768px) {
+  #indexText{
+    margin: 0;
+  }
+}
